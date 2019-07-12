@@ -23,7 +23,9 @@ class GoalsVC: UIViewController {
     }
 
     @IBAction func addGoalPressed(_ sender: Any) {
-        performSegue(withIdentifier: "showAddGoal", sender: nil)
+        guard let createGoalVC = storyboard?.instantiateViewController(withIdentifier: "AddGoalVC")
+            else {return}
+        self.presentDetail(createGoalVC)
     }
     
 }
