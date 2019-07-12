@@ -23,6 +23,7 @@ class GoalsVC: UIViewController {
     }
 
     @IBAction func addGoalPressed(_ sender: Any) {
+        performSegue(withIdentifier: "showAddGoal", sender: nil)
     }
     
 }
