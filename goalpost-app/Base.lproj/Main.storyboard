@@ -177,23 +177,56 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XeU-zS-gLw">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal Removed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYg-2g-bwn">
+                                        <rect key="frame" x="20" y="18" width="96" height="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9N-0V-fbQ">
+                                        <rect key="frame" x="258" y="7" width="52" height="33"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="UNDO">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="undoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cbs-D9-omM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.77217072249999996" green="0.082263052700000006" blue="0.058594269720000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="c9N-0V-fbQ" secondAttribute="trailing" constant="10" id="3Ww-eP-4gv"/>
+                                    <constraint firstAttribute="bottom" secondItem="c9N-0V-fbQ" secondAttribute="bottom" constant="10" id="BQQ-5j-nlF"/>
+                                    <constraint firstAttribute="height" constant="50" id="GNG-qI-zFa"/>
+                                    <constraint firstItem="WYg-2g-bwn" firstAttribute="leading" secondItem="XeU-zS-gLw" secondAttribute="leading" constant="20" id="TaB-Iu-JaS"/>
+                                    <constraint firstAttribute="bottom" secondItem="WYg-2g-bwn" secondAttribute="bottom" constant="15" id="bXK-2e-EEB"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="XGX-Bg-ekN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0Ib-qm-cQU"/>
+                            <constraint firstItem="XeU-zS-gLw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1lq-4j-mRt"/>
                             <constraint firstItem="NW3-U2-0IN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="BVW-FU-abd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XeU-zS-gLw" secondAttribute="bottom" id="EyI-vf-9ij"/>
                             <constraint firstItem="NW3-U2-0IN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lbj-6k-BC9"/>
                             <constraint firstItem="XGX-Bg-ekN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dVM-Zs-A1E"/>
                             <constraint firstItem="NW3-U2-0IN" firstAttribute="top" secondItem="XGX-Bg-ekN" secondAttribute="bottom" id="ebB-dE-5aI"/>
                             <constraint firstItem="NW3-U2-0IN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fdt-mI-ZUt"/>
                             <constraint firstItem="UIj-E2-GsT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oBH-IE-eMR"/>
                             <constraint firstItem="UIj-E2-GsT" firstAttribute="top" secondItem="XGX-Bg-ekN" secondAttribute="bottom" constant="60" id="pEL-aN-nBc"/>
+                            <constraint firstItem="XeU-zS-gLw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vTs-pA-bjT"/>
                             <constraint firstItem="XGX-Bg-ekN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wzU-qI-Cgh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="NW3-U2-0IN" id="6Ya-XE-bfc"/>
+                        <outlet property="undoView" destination="XeU-zS-gLw" id="BEx-Me-0vN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

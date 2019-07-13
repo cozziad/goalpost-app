@@ -42,7 +42,6 @@ class FinishGoalVC: UIViewController,UITextFieldDelegate {
         
         do{try managedContext.save(); completion(true)}
         catch {debugPrint("Could Not Save: \(error.localizedDescription)"); completion(false)}
-        
     }
 
     @IBAction func createGoalBtnPressed(_ sender: Any) {
@@ -54,5 +53,4 @@ class FinishGoalVC: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func backBtnPressed(_ sender: Any) {dismissDetail()}
-    
 }

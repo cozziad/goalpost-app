@@ -20,6 +20,7 @@
 		750FC02B22D94B26004BB5E9 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750FC02A22D94B26004BB5E9 /* UIViewExt.swift */; };
 		750FC02D22D951F4004BB5E9 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750FC02C22D951F4004BB5E9 /* UIButtonExt.swift */; };
 		750FC02F22D958F1004BB5E9 /* FinishGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750FC02E22D958F1004BB5E9 /* FinishGoalVC.swift */; };
+		750FC03322DA2A49004BB5E9 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750FC03222DA2A49004BB5E9 /* Goal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		750FC02A22D94B26004BB5E9 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		750FC02C22D951F4004BB5E9 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
 		750FC02E22D958F1004BB5E9 /* FinishGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishGoalVC.swift; sourceTree = "<group>"; };
+		750FC03222DA2A49004BB5E9 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		750FC00722D8D829004BB5E9 /* goalpost-app */ = {
 			isa = PBXGroup;
 			children = (
+				750FC03022DA2A09004BB5E9 /* Model */,
 				750FC02122D8D8CA004BB5E9 /* Extensions */,
 				750FC02022D8D8C3004BB5E9 /* Enums */,
 				750FC01E22D8D89E004BB5E9 /* View */,
@@ -118,6 +121,14 @@
 				750FC02C22D951F4004BB5E9 /* UIButtonExt.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		750FC03022DA2A09004BB5E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				750FC03222DA2A49004BB5E9 /* Goal.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +208,7 @@
 				750FC00B22D8D829004BB5E9 /* GoalsVC.swift in Sources */,
 				750FC02B22D94B26004BB5E9 /* UIViewExt.swift in Sources */,
 				750FC00922D8D829004BB5E9 /* AppDelegate.swift in Sources */,
+				750FC03322DA2A49004BB5E9 /* Goal.swift in Sources */,
 				750FC02922D90300004BB5E9 /* UIViewControllerExt.swift in Sources */,
 				750FC02D22D951F4004BB5E9 /* UIButtonExt.swift in Sources */,
 				750FC02F22D958F1004BB5E9 /* FinishGoalVC.swift in Sources */,

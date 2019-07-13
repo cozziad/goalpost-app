@@ -31,8 +31,6 @@ extension UIViewController{
             self.view.window?.layer.add(transition, forKey: kCATransition)
             self.present(VCToPresent, animated: false,completion: nil)
         }
-        
-        
     }
     
     func dismissDetail() {
